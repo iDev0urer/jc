@@ -1,0 +1,520 @@
+/**
+ *
+ * SOME HELPFUL OPTIONS
+ * at the top for convenience sake
+ *
+ **/
+
+$hover-effects              = true
+$enable-flex                = true
+$enable-grid                = true
+$rounded-corners            = true
+$animations-on              = true
+$enable-hover-media-query   = false
+
+/**
+ *
+ * SPACING
+ *
+ **/
+
+spacer                      = 1rem
+spacer-x                    = spacer
+spacer-y                    = spacer
+spacers = {
+  '0': {
+    x: 0,
+    y: 0
+  },
+  '1': {
+    x: spacer-x,
+    y: spacer-y
+  },
+  '2': {
+    x: (spacer-x * 1.5),
+    y: (spacer-y * 1.5)
+  },
+  '3': {
+    x: (spacer-x * 3),
+    y: (spacer-y * 3)
+  }
+}
+border-width                 = 1px
+
+/**
+ *
+ * COLORS
+ *
+ **/
+
+percentage-offset-1 := 25%
+percentage-offset-2 := 80%
+percentage-offset-3 := 95%
+
+// Hash of default colors
+colors = {
+  orange: #febd38,
+  blue: #448AFF,
+  teal: #009688,
+  yellow: #d0c036,
+  red: #F44336,
+  gray: #929292,
+  grey: #929292,
+  green: #8dc63f,
+  white: #ffffff,
+  primary: #00bce4,
+  secondary: #f47721,
+}
+
+// Loop through the hash and make variables for light and
+// dark variations of the colors
+for name, color in colors
+  define(name + '-light', lighten(color, percentage-offset-1))
+  define(name + '-lighter', lighten(color, percentage-offset-2))
+  define(name + '-lightest', lighten(color, percentage-offset-3))
+  define(name, color)
+  define(name + '-dark', darken(color, percentage-offset-1))
+  define(name + '-darker', darken(color, percentage-offset-2))
+  define(name + '-darkest', darken(color, percentage-offset-3))
+
+// Some bonus colors
+facebook-blue                = #3b5998
+twitter-blue                 = #55acee
+gplus-red                    = #DC4E41
+pinterest-red                = #C92228
+
+/**
+ *
+ * BODY STYLES
+ *
+ **/
+
+body-bg                      = #fff
+body-color                   = gray-darker
+
+
+/**
+ *
+ * LINKS
+ *
+ **/
+
+link-color                   = green
+link-decoration              = none
+link-hover-color             = green-dark
+link-hover-decoration        = underline
+link-light-color             = #FAFAFA
+
+/**
+ *
+ * GRID BREAKPOINTS
+ *
+ **/
+
+grid-breakpoints = {
+  xs: 0,
+  sm: 544px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+}
+
+/**
+ *
+ * GRID CONTAINERS
+ *
+ **/
+
+container-max-widths = {
+  sm: 576px,
+  md: 720px,
+  lg: 940px,
+  xl: 1140px
+}
+
+/**
+ *
+ * GRID COLUMNS
+ *
+ **/
+
+grid-columns               = 12
+grid-gutter-width          = 1.875rem // Or about 30px
+
+/**
+*
+* TYPESETTING
+*
+**/
+
+// Set default font families
+font-family-serif           = "Times New Roman", Times, serif
+font-family-sans            = "segoeui", Arial, sans-serif;
+font-family-mono            = Monaco, Consolas, "Courier New", monospace;
+font-family-base            = font-family-sans;
+
+// Set default font sizes and colors
+font-size-root              = 14px
+
+font-size-base              = 1rem
+font-size-lg                = 1.25rem
+font-size-sm                = .875rem
+font-size-xs                = .75rem
+font-weight-base            = 400
+
+font-size-h1                = 2.5rem
+font-size-h2                = 2rem
+font-size-h3                = 1.75rem
+font-size-h4                = 1.5rem
+font-size-h5                = 1.25rem
+font-size-h6                = 1.1rem
+
+display1-size               = 6rem
+display1-weight             = 200
+
+display2-size               = 3.5rem
+display2-weight             = 200
+
+display3-size               = 3rem
+display3-weight             = 200
+
+display4-size               = 2rem
+display4-weight             = 200
+
+lead-size                   = 1.25rem
+lead-weight                 = 200
+
+line-height                 = 1.5
+line-height-lg              = (4 / 3)
+line-height-sm              = 1.5
+
+caret-width                 = .3em
+caret-width-lg              = .4em
+
+headings-margin-bottom       = (spacer / 2)
+headings-font-family         = inherit
+headings-font-weight         = 400
+headings-line-height         = 1.1
+headings-color               = inherit
+
+lead-font-size              = 1.25rem
+lead-font-weight            = 300
+
+text-muted                  = gray
+
+abbr-border-color           = gray-light
+
+blockquote-small-color      = gray-light
+blockquote-font-size        = (font-size-base * 1.25)
+blockquote-border-color     = gray-lighter
+
+hr-border-color             = rgba(0,0,0,.1)
+hr-border-width             = border-width
+
+dt-font-weight              = bold
+nested-kbd-font-weight      = bold
+list-inline-padding         = 5px
+
+/**
+ *
+ * ICON FONTS
+ *
+ **/
+use-icons                   = false
+icon-font-path              = '../fonts/'
+icon-font-name              = 'ionicons'
+
+/**
+*
+* BORDERS
+*
+**/
+
+border-radius-default       = .25rem
+border-radius-lg            = .3rem
+border-radius-sm            = .2rem
+
+/**
+ *
+ * TABLES
+ *
+ **/
+
+table-cell-padding         = .75rem
+table-sm-cell-padding      = .3rem
+
+table-bg                   = transparent
+table-bg-accent            = #f9f9f9
+table-bg-hover             = #f5f5f5
+table-bg-active            = table-bg-hover
+
+table-border-width         = border-width
+table-border-color         = gray-lighter
+
+/**
+*
+* BUTTONS & LABELS
+*
+**/
+
+btn-padding-x               = 1.5rem
+btn-padding-y               = .25rem
+btn-font-weight             = bold
+
+btn-color-light             = gray-darker
+btn-color-dark              = white
+
+btn-link-disabled-color     = gray-light
+
+btn-padding-x-sm            = .75rem
+btn-padding-y-sm            = .25rem
+
+btn-padding-x-lg            = 1.25rem
+btn-padding-y-lg            = .75rem
+
+// Allow customizing of border radius seperately from the global border radius
+btn-border-radius           = 6px
+btn-border-radius-lg        = border-radius-lg
+btn-border-radius-sm        = border-radius-sm
+btn-border-width            = 2px
+
+/**
+*
+* DROPDOWNS
+*
+**/
+
+dropdown-bg                = #fff
+dropdown-border-color      = rgba(0,0,0,.15)
+dropdown-border-width      = border-width
+dropdown-divider-bg        = #e5e5e5
+dropdown-active-bg         = rgba(200, 200, 200, .3)
+
+dropdown-link-color        = gray-dark
+dropdown-link-hover-color  = white
+dropdown-link-hover-bg     = rgba(primary, .5)
+
+dropdown-link-active-color = white
+dropdown-link-active-bg    = primary
+
+dropdown-link-disabled-color = gray-light
+
+dropdown-header-color      = gray-light
+
+dropdown-item-padding-y    = spacer-y
+dropdown-item-padding-x    = spacer-x
+
+
+/**
+*
+* FORMS
+*
+**/
+
+input-padding-x                = .75rem
+input-padding-y                = (input-padding-x / 2)
+
+input-bg                       = #FEFEFE
+input-bg-disabled              = gray-lighter
+
+input-color                    = gray
+input-border-color             = gray-lighter
+
+input-btn-border-width         = border-width
+input-box-shadow               = inset 0 1px 1px rgba(0,0,0,.075)
+
+input-border-radius            = 0
+input-border-radius-lg         = 0
+input-border-radius-sm         = 0
+
+input-border-focus             = primary
+input-box-shadow-focus         = transparentify(primary, primary, .6)
+
+input-color-placeholder        = #999
+
+input-padding-x-sm           = .75rem
+input-padding-y-sm           = .25rem
+
+input-padding-x-lg           = 1.25rem
+input-padding-y-lg           = .75rem
+
+input-height                     = (font-size-base * line-height) + (input-padding-y * 2)
+input-height-lg                  = (font-size-lg * line-height-lg) + (input-padding-y-lg * 2)
+input-height-sm                  = (font-size-sm * line-height-sm) + (input-padding-y-sm * 2)
+
+form-group-margin-bottom         = spacer-y
+
+input-group-addon-bg             = gray-lighter
+input-group-addon-border-color   = input-border-color
+
+cursor-disabled                  = not-allowed
+
+// Validation icons
+form-icon-success                = b64url('./assets/images/success.svg')
+form-icon-warning                = b64url('./assets/images/warning.svg')
+form-icon-danger                 = b64url('./assets/images/danger.svg')
+
+
+// Form states and alerts
+//
+// Define colors for form feedback states and, by default, alerts.
+
+state-success-text               = #3c763d
+state-success-bg                 = #dff0d8
+state-success-border             = darken(state-success-bg, 5%)
+
+state-info-text                  = #31708f
+state-info-bg                    = #d9edf7
+state-info-border                = darken(state-info-bg, 7%)
+
+state-warning-text               = #8a6d3b
+state-warning-bg                 = #fcf8e3
+state-warning-border             = darken(state-warning-bg, 5%)
+
+state-danger-text                = #a94442
+state-danger-bg                  = #f2dede
+state-danger-border              = darken(state-danger-bg, 5%)
+
+// Navbar
+
+navbar-border-radius             = 0
+navbar-padding-horizontal        = spacer
+navbar-padding-vertical          = (spacer / 2)
+
+navbar-vertical-width            = 320px
+
+navbar-dark-bg                   = lighten(gray-darker, 15%)
+navbar-dark-color                = white
+navbar-dark-hover-color          = rgba(255,255,255,.8)
+navbar-dark-active-color         = primary
+navbar-dark-disabled-color       = gray-lighter
+
+navbar-light-bg                  = gray-lighter
+navbar-light-color               = rgba(0,0,0,.7)
+navbar-light-hover-color         = rgba(0,0,0,.9)
+navbar-light-active-color        = rgba(0,0,0,1)
+navbar-light-disabled-color      = rgba(0,0,0,.25)
+navbar-light-logo-color          = blue-dark
+navbar-dark-logo-color           = gray-lightest
+
+navbar-toggle-color              = gray-darker
+
+// Navs
+
+nav-link-padding                 = .5em 1em
+nav-link-hover-bg                = gray-lighter
+
+nav-disabled-link-color          = gray-light
+nav-disabled-link-hover-color    = gray-light
+
+nav-tabs-border-color            = #ddd
+
+nav-tabs-link-border-width       = border-width
+nav-tabs-link-hover-border-color = gray-lighter
+
+nav-tabs-active-link-hover-bg    = body-bg
+nav-tabs-active-link-hover-color = gray
+nav-tabs-active-link-hover-border-color = #ddd
+
+nav-tabs-justified-link-border-color    = #ddd
+nav-tabs-justified-active-link-border-color = body-bg
+
+nav-pills-border-radius          = border-radius
+nav-pills-active-link-hover-bg   = component-active-bg
+nav-pills-active-link-hover-color= component-active-color
+
+//// Sidebar
+//
+//sidebar-border-radius             = 0
+//sidebar-padding-horizontal        = spacer
+//sidebar-padding-vertical          = (spacer / 2)
+//
+//sidebar-dark-bg                   = primary
+//sidebar-dark-color                = rgba(255,255,255,.7)
+//sidebar-dark-hover-color          = rgba(255,255,255,.9)
+//sidebar-dark-active-color         = rgba(255,255,255,1)
+//sidebar-dark-disabled-color       = rgba(255,255,255,.25)
+//
+//sidebar-light-bg                  = gray-lightest
+//sidebar-light-color               = rgba(0,0,0,.7)
+//sidebar-light-hover-color         = rgba(0,0,0,.9)
+//sidebar-light-active-color        = rgba(0,0,0,1)
+//sidebar-light-disabled-color      = rgba(0,0,0,.25)
+//sidebar-light-logo-color          = blue-dark
+//sidebar-dark-logo-color           = gray-lightest
+//
+//sidebar-toggle-color              = gray-darker
+
+// MODALS
+modal-border-radius               = border-radius-default
+modal-border-size                 = 0
+modal-border-color                = gray-darkest
+modal-box-shadow                  = 1px 3px 3px 0 rgba(0,0,0,.2), 1px 3px 15px 2px rgba(0,0,0,.2);
+
+modal-header-padding              = (spacer-y * 2.5) (spacer-x * 1.5) spacer-y
+modal-header-font-family          = font-family-sans
+modal-header-font-size            = font-size-h2
+modal-header-margin               = 0
+modal-header-color                = gray-darkest
+modal-header-border-bottom        = 2px solid primary
+
+modal-content-padding             = spacer-y (spacer-x * 1.5)
+modal-content-font-size           = font-size-base
+modal-content-line-height         = line-height
+modal-content-background          = transparent
+
+modal-light-bg                    = white
+modal-light-color                 = gray-darkest
+
+modal-dark-bg                     = gray-darkest
+modal-dark-color                  = white
+
+modal-close-top                   = spacer-y / 2
+modal-close-right                 = spacer-x / 2
+modal-close-opacity               = .6
+modal-close-size                  = font-size-base
+modal-close-color                 = gray-darkest
+modal-close-hitbox                = font-size-base
+modal-close-padding               = 0
+
+// CODE
+
+code-light-color                 = gray-dark
+code-light-bg                    = #f7f7f9
+code-dark-color                  = gray-lightest
+code-dark-bg                     = gray-darker
+code-border-radius               = border-radius-default
+
+pre-light-color                 = gray-dark
+pre-light-bg                    = #f7f7f9
+pre-dark-color                  = gray-lightest
+pre-dark-bg                     = gray-darker
+pre-border-radius               = border-radius-default
+
+// ANIMATIONS
+
+transition-duration              = .2s
+
+// IMAGES
+placeholder-color               := gray-lighter
+image-disabled-opacity          := .7
+image-rounded-border-radius     := border-radius-lg
+image-border                    := 4px solid rgba(gray-lighter, .1)
+image-circular-radius           := 50%
+
+/**
+*
+* Z-INDEXES
+*
+**/
+
+zindex-navbar              := 1000
+zindex-dropdown            := 1000
+zindex-popover             := 1060
+zindex-tooltip             := 1070
+zindex-navbar-fixed        := 1030
+zindex-navbar-sticky       := 1030
+zindex-modal-bg            := 1040
+zindex-modal               := 1050
+zindex-sidebar             := 1030
+zindex-dimmer              := 1040

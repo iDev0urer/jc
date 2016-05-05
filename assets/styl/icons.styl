@@ -1,0 +1,409 @@
+@font-face {
+  font-family: "johnson";
+  src: url('../fonts/johnson/johnson.eot');
+  src: url('../fonts/johnson/johnson.eot?#iefix') format('eot'),
+          url('../fonts/johnson/johnson.woff2') format('woff2'),
+          url('../fonts/johnson/johnson.woff') format('woff'),
+          url('../fonts/johnson/johnson.ttf') format('truetype'),
+          url('../fonts/johnson/johnson.svg#johnson') format('svg');
+}
+
+icon-base() {
+  font: normal normal font-size-base/1 johnson
+  text-rendering: auto
+  display: inline-block
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  font-style: normal
+  font-variant: normal
+  font-weight: normal
+  // speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+}
+
+icon-char($filename) {
+  $char = ""
+  
+  if $filename == account {
+    $char = "\E001"
+  }
+  
+  if $filename == advisory {
+    $char = "\E002"
+  }
+  
+  if $filename == arrow-down {
+    $char = "\E003"
+  }
+  
+  if $filename == arrow-left {
+    $char = "\E004"
+  }
+  
+  if $filename == arrow-right {
+    $char = "\E005"
+  }
+  
+  if $filename == arrow-up {
+    $char = "\E006"
+  }
+  
+  if $filename == briefcase {
+    $char = "\E007"
+  }
+  
+  if $filename == cart {
+    $char = "\E008"
+  }
+  
+  if $filename == check-mark-circle {
+    $char = "\E009"
+  }
+  
+  if $filename == check-mark {
+    $char = "\E00A"
+  }
+  
+  if $filename == chevron-down {
+    $char = "\E00B"
+  }
+  
+  if $filename == chevron-left {
+    $char = "\E00C"
+  }
+  
+  if $filename == chevron-right {
+    $char = "\E00D"
+  }
+  
+  if $filename == chevron-up {
+    $char = "\E00E"
+  }
+  
+  if $filename == close {
+    $char = "\E00F"
+  }
+  
+  if $filename == compass {
+    $char = "\E010"
+  }
+  
+  if $filename == cube {
+    $char = "\E011"
+  }
+  
+  if $filename == document {
+    $char = "\E012"
+  }
+  
+  if $filename == expand {
+    $char = "\E013"
+  }
+  
+  if $filename == filter {
+    $char = "\E014"
+  }
+  
+  if $filename == home {
+    $char = "\E015"
+  }
+  
+  if $filename == image {
+    $char = "\E016"
+  }
+  
+  if $filename == information-filled {
+    $char = "\E017"
+  }
+  
+  if $filename == information {
+    $char = "\E018"
+  }
+  
+  if $filename == magnifying-glass {
+    $char = "\E019"
+  }
+  
+  if $filename == menu {
+    $char = "\E01A"
+  }
+  
+  if $filename == minus-rounded-square {
+    $char = "\E01B"
+  }
+  
+  if $filename == monitor {
+    $char = "\E01C"
+  }
+  
+  if $filename == open-book {
+    $char = "\E01D"
+  }
+  
+  if $filename == open-in {
+    $char = "\E01E"
+  }
+  
+  if $filename == orders {
+    $char = "\E01F"
+  }
+  
+  if $filename == pause {
+    $char = "\E020"
+  }
+  
+  if $filename == play-in-browser {
+    $char = "\E021"
+  }
+  
+  if $filename == plus-rounded-square {
+    $char = "\E022"
+  }
+  
+  if $filename == products {
+    $char = "\E023"
+  }
+  
+  if $filename == radio-tower {
+    $char = "\E024"
+  }
+  
+  if $filename == reports {
+    $char = "\E025"
+  }
+  
+  if $filename == shield-check {
+    $char = "\E026"
+  }
+  
+  if $filename == signal-bars {
+    $char = "\E027"
+  }
+  
+  if $filename == sliders {
+    $char = "\E028"
+  }
+  
+  if $filename == square-checked {
+    $char = "\E029"
+  }
+  
+  if $filename == square-filled {
+    $char = "\E02A"
+  }
+  
+  if $filename == square-outline {
+    $char = "\E02B"
+  }
+  
+  if $filename == support {
+    $char = "\E02C"
+  }
+  
+  if $filename == television {
+    $char = "\E02D"
+  }
+  
+  if $filename == text-squiggle {
+    $char = "\E02E"
+  }
+  
+  return $char
+}
+
+make-icon($fileName, $insert = 'before', $extend = false) {
+  &:{$insert} {
+    if $extend {
+      icon-base()
+    }
+    content: icon-char($fileName)
+  }
+}
+
+.icon {
+  icon-base()
+
+  &.account {
+    make-icon(account)
+  }
+
+  &.advisory {
+    make-icon(advisory)
+  }
+
+  &.arrow-down {
+    make-icon(arrow-down)
+  }
+
+  &.arrow-left {
+    make-icon(arrow-left)
+  }
+
+  &.arrow-right {
+    make-icon(arrow-right)
+  }
+
+  &.arrow-up {
+    make-icon(arrow-up)
+  }
+
+  &.briefcase {
+    make-icon(briefcase)
+  }
+
+  &.cart {
+    make-icon(cart)
+  }
+
+  &.check-mark-circle {
+    make-icon(check-mark-circle)
+  }
+
+  &.check-mark {
+    make-icon(check-mark)
+  }
+
+  &.chevron-down {
+    make-icon(chevron-down)
+  }
+
+  &.chevron-left {
+    make-icon(chevron-left)
+  }
+
+  &.chevron-right {
+    make-icon(chevron-right)
+  }
+
+  &.chevron-up {
+    make-icon(chevron-up)
+  }
+
+  &.close {
+    make-icon(close)
+  }
+
+  &.compass {
+    make-icon(compass)
+  }
+
+  &.cube {
+    make-icon(cube)
+  }
+
+  &.document {
+    make-icon(document)
+  }
+
+  &.expand {
+    make-icon(expand)
+  }
+
+  &.filter {
+    make-icon(filter)
+  }
+
+  &.home {
+    make-icon(home)
+  }
+
+  &.image {
+    make-icon(image)
+  }
+
+  &.information-filled {
+    make-icon(information-filled)
+  }
+
+  &.information {
+    make-icon(information)
+  }
+
+  &.magnifying-glass {
+    make-icon(magnifying-glass)
+  }
+
+  &.menu {
+    make-icon(menu)
+  }
+
+  &.minus-rounded-square {
+    make-icon(minus-rounded-square)
+  }
+
+  &.monitor {
+    make-icon(monitor)
+  }
+
+  &.open-book {
+    make-icon(open-book)
+  }
+
+  &.open-in {
+    make-icon(open-in)
+  }
+
+  &.orders {
+    make-icon(orders)
+  }
+
+  &.pause {
+    make-icon(pause)
+  }
+
+  &.play-in-browser {
+    make-icon(play-in-browser)
+  }
+
+  &.plus-rounded-square {
+    make-icon(plus-rounded-square)
+  }
+
+  &.products {
+    make-icon(products)
+  }
+
+  &.radio-tower {
+    make-icon(radio-tower)
+  }
+
+  &.reports {
+    make-icon(reports)
+  }
+
+  &.shield-check {
+    make-icon(shield-check)
+  }
+
+  &.signal-bars {
+    make-icon(signal-bars)
+  }
+
+  &.sliders {
+    make-icon(sliders)
+  }
+
+  &.square-checked {
+    make-icon(square-checked)
+  }
+
+  &.square-filled {
+    make-icon(square-filled)
+  }
+
+  &.square-outline {
+    make-icon(square-outline)
+  }
+
+  &.support {
+    make-icon(support)
+  }
+
+  &.television {
+    make-icon(television)
+  }
+
+  &.text-squiggle {
+    make-icon(text-squiggle)
+  }
+
+}

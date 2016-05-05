@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Johnson Controls Style Tests</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+
+<body id="detail-page">
+
+    <header id="main-navbar" class="navbar">
+        <div class="container-fluid">
+
+            <div class="navbar-logo">
+                <a href="http://johnsoncontrols.com"></a>
+            </div>
+
+            <div class="navbar-nav nav-right">
+                <span class="nav-item hidden-sm-down">Account: <b>Green Bay Packers</b></span>
+                <a href="#" class="nav-item menu-toggle hidden-xl-up" data-menu="#sidebar">
+                    <i class="icon menu"></i>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="page-wrapper">
+
+        <nav id="sidebar" class="navbar navbar-vertical navbar-inverted navbar-fixed-left">
+            <div class="nav-header">
+                <div class="nav-item dropdown">
+                    <a href="#" class="button button-link text-white dropdown-toggle">
+                        User: <b>Michaela Cianciarulo</b>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-left">
+                        <a href="#" class="dropdown-item with-right-icon">
+                            Logout
+                            <i class="icon sliders"></i>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item with-right-icon">
+                            Settings
+                            <i class="icon open-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <a href="#" class="button button-link dropdown-toggle text-white">
+                        Account: <b>Green Bay Packers</b>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-left">
+                        <a href="#" class="dropdown-item">
+                            Green Bay Packers
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            NFL
+                        </a>
+                    </div>
+                </div>
+
+                <span class="button button-link text-left nav-item text-left-important">Customer: <b>LEAGUE1</b></span>
+            </div>
+            <ul class="navbar-nav">
+                <!-- TODO: Disable selection event for links on touch devices -->
+                <li>
+                    <a href="#" class="nav-link">
+                        <div class="icon-left">
+                            <i class="icon home"></i>
+                        </div>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link with-submenu">
+                        <div class="icon-left">
+                            <i class="icon cube"></i>
+                        </div>
+                        Orders
+                    </a>
+                    <ul class="submenu">
+                        <li class="dropdown-item">
+                            <a href="#">My Orders</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#">New Order: Product</a>
+                        </li>
+                        <li class="dropdown-item external-link">
+                            <a href="#">New Order: Marketing</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#">My Shipments</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="nav-link with-submenu">
+                        <div class="icon-left">
+                            <i class="icon briefcase"></i>
+                        </div>
+                        Account
+                    </a>
+                    <ul class="submenu">
+                        <li class="dropdown-item">
+                            <a href="#">My Account</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#">Invoices</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#">Payment History</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#">Memos</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#">Rebates</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <div class="icon-left">
+                            <i class="icon signal-bars"></i>
+                        </div>
+                        Reports
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link with-submenu">
+                        <div class="icon-left">
+                            <i class="icon cart"></i>
+                        </div>
+                        Products
+                    </a>
+                    <ul class="submenu">
+                        <li class="dropdown-item">
+                            <a href="#">My Products</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#">Fitment Guide</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="nav-link with-submenu">
+                        <div class="icon-left">
+                            <i class="icon compass"></i>
+                        </div>
+                        Advisory
+                    </a>
+                    <ul class="submenu">
+                        <li class="dropdown-item">
+                            <a href="#">Scorecard</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#">Tasks</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#">Leads</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#">New Lead</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#">Campaigns</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#">Resources</a>
+                        </li>
+                        <li class="dropdown-item external-link">
+                            <a href="#">Varta College</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="nav-link with-submenu">
+                        <div class="icon-left">
+                            <i class="icon shield-check"></i>
+                        </div>
+                        Support
+                    </a>
+                    <ul class="submenu">
+                        <li class="dropdown-item">
+                            <a href="#">Help</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#">Claims</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#">New Claim</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#">Warrenties</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#">New Warranty</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="search-item">
+                    <a href="" class="nav-link">
+                        <div class="icon-left">
+                            <i class="icon magnifying-glass"></i>
+                        </div>
+                        Search
+                    </a>
+                    <div class="search-wrapper">
+                        <div class="search-field" contenteditable="true" placeholder="Global search"></div>
+                        <a href="#" class="close-button"><i class="icon close"></i></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="nav-dimmer"></div>
+
+        <div class="page-content">
+
+            <div class="row p-y-2">
+                <div class="col-sm-6">
+                    <h2>Order Detail</h2>
+                </div>
+                <div class="col-sm-6 text-right">
+                    <a href="#" class="button button-green">Clone</a>
+                </div>
+            </div>
+
+            <div class="detail-header-row">
+                <div class="row p-y-1">
+                    <div class="col-xs-12 col-md-9 text-left">
+                        <div class="info-item">Status: <span class="text-primary strong">Shipped</span></div>
+                        <div class="info-item">Order Number: <span class="strong">0001234</span></div>
+                        <div class="info-item">ERP Number: <span class="strong">SS00567</span></div>
+                    </div>
+                    <div class="col-xs-12 col-md-3 text-left-xs text-right-md">
+                        <a href="#" class="button button-orange">Create a Claim</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail-info-tables p-y-1">
+
+                <div class="row">
+                    <div class="info-table col-xs-12 col-md-6 col-lg-4">
+                        <h4 class="table-header">Order Information</h4>
+                        <div class="table-row">
+                            <div class="table-col">Order Created Date</div>
+                            <div class="table-col strong">12/15/2015</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-col">Order Start Date</div>
+                            <div class="table-col strong">12/18/2015</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-col">PO Number</div>
+                            <div class="table-col strong">123456</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-col">Credit Check Issues</div>
+                            <div class="table-col strong">Released</div>
+                        </div>
+                    </div>
+
+                    <div class="info-table currency col-xs-12 col-md-6 col-lg-4">
+                        <h4 class="table-header">Order Summary</h4>
+                        <div class="table-row">
+                            <div class="table-col">Sub Total</div>
+                            <div class="table-col strong">5,566,528.00 CNY</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-col">Surcharge Total</div>
+                            <div class="table-col strong">0.00 CNY</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-col">Discounts</div>
+                            <div class="table-col strong">(1,380,498.94) CNY</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-col">Tax Totals</div>
+                            <div class="table-col strong">08,457.36 CNY</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-col">Freight Costs</div>
+                            <div class="table-col strong">888.00 CNY</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-col strong">Total</div>
+                            <div class="table-col strong">5,095,374.42 CNY</div>
+                        </div>
+                    </div>
+
+                    <div class="info-table col-xs-12 col-md-6 col-lg-4">
+                        <h4 class="table-header">Shipping Information</h4>
+                        <div class="table-row">
+                            <div class="table-col">Requested Delivery Date</div>
+                            <div class="table-col strong">1/16/2016</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-col">Total Order Weight</div>
+                            <div class="table-col strong">8,888 lbs</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-col">Total Order Units</div>
+                            <div class="table-col strong">100</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-col">Total Shipped</div>
+                            <div class="table-col strong">050</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-col">Total Remaining</div>
+                            <div class="table-col strong">50</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-col">Shipping Address</div>
+                            <div class="table-col strong">1234 W Main Street Somewhere, ST 12345 USA</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row p-y-3">
+                <div class="col-xs-12">
+                    <h3>Products</h3>
+                </div>
+                <div class="col-xs-12">
+                    <div class="table-responsive">
+                        <table class="product-table ng-isonlate-scope no-footer dataTable" data-datatable="ng" data-dt-options="productTable.dtOptions">
+                            <thead>
+                                <tr role="row">
+                                    <th class="sorting_asc">Product</th>
+                                    <th class="sorting">MRP</th>
+                                    <th class="sorting">Total Units</th>
+                                    <th class="sorting">Amount</th>
+                                    <th class="sorting">Ship Date</th>
+                                    <th class="sorting">Delivery Date</th>
+                                    <th class="sorting">Shipments</th>
+                                    <th class="sorting">Shipped</th>
+                                    <th class="sorting">Remaining</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr data-ng-repeat="tr in orderDetails.products track by $index" class="ng-scope odd" role="row">
+                                    <td>
+                                        <a href="#" class="open-modal">
+                                            <img src="./images/product-thumb-1.jpg" class="thumb"> Lorem Product 1
+                                        </a>
+                                    </td>
+                                    <td>800.80 CNY</td>
+                                    <td>1500</td>
+                                    <td class="text-green"><a href="#">1201200 CNY</a></td>
+                                    <td>12/31/2015</td>
+                                    <td class="text-green"><a href="#">1/22/2016</a></td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>1500</td>
+                                </tr>
+                                <tr data-ng-repeat="tr in orderDetails.products track by $index" class="ng-scope odd" role="row">
+                                    <td>
+                                        <a href="#" class="open-modal">
+                                            <img src="./images/product-thumb-2.jpg" class="thumb"> Lorem Product 2
+                                        </a>
+                                    </td>
+                                    <td>1,234.56 CNY</td>
+                                    <td>20</td>
+                                    <td class="text-green"><a href="#">1201200 CNY</a></td>
+                                    <td>12/31/2015</td>
+                                    <td class="text-green"><a href="#">1201200 CNY</a></td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>1500</td>
+                                </tr>
+                                <tr data-ng-repeat="tr in orderDetails.products track by $index" class="ng-scope odd" role="row">
+                                    <td>
+                                        <a href="#" class="open-modal">
+                                            <img src="./images/product-thumb-3.jpg" class="thumb"> Lorem Product 3
+                                        </a>
+                                    </td>
+                                    <td>800.80 CNY</td>
+                                    <td>30</td>
+                                    <td class="text-green"><a href="#">1201200 CNY</a></td>
+                                    <td>12/31/2015</td>
+                                    <td class="text-green"><a href="#">1/22/2016</a></td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>1500</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row p-y-3">
+                <div class="col-xs-12">
+                    <h3>Shipments</h3>
+                </div>
+                <div class="col-xs-12">
+                    <div class="dataTables_wrapper">
+                        <div class="top"></div>
+                        <div class="table-responsive">
+                            <table class="shipment-table ng-isonlate-scope no-footer dataTable" data-datatable="ng" data-dt-options="productTable.dtOptions">
+                                <thead>
+                                    <tr role="row">
+                                        <th class="sorting">Shipment Number</th>
+                                        <th class="sorting">Shipping Status</th>
+                                        <th class="sorting">Estimated Ship Date</th>
+                                        <th class="sorting">Actual Ship Date</th>
+                                        <th class="sorting">Quantity Shipped</th>
+                                        <th class="sorting_asc">Estimated Delivery Date</th>
+                                        <th class="sorting">Actual Delivery Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr data-ng-repeat="tr in orderDetails.products track by $index" class="ng-scope odd" role="row">
+                                        <td><a href="#">000098765</a></td>
+                                        <td>Shipped</td>
+                                        <td>12/31/2015</td>
+                                        <td>11/2/2016</td>
+                                        <td>40</td>
+                                        <td>1/18/2016</td>
+                                        <td>1/20/2016</td>
+                                    </tr>
+                                    <tr data-ng-repeat="tr in orderDetails.products track by $index" class="ng-scope odd" role="row">
+                                        <td><a href="#">000098765</a></td>
+                                        <td>Shipped</td>
+                                        <td>12/31/2015</td>
+                                        <td>11/2/2016</td>
+                                        <td>40</td>
+                                        <td>1/18/2016</td>
+                                        <td><a href="#">Confirm Delivery</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="bottom"></div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row p-y-3">
+                <div class="col-xs-12 col-lg-8">
+
+                    <h3>Discounts</h3>
+                    <div class="table-responsive m-b-2">
+                        <table class="shipment-table ng-isonlate-scope no-footer dataTable" data-datatable="ng" data-dt-options="productTable.dtOptions">
+                            <thead>
+                                <tr role="row">
+                                    <th class="sorting">Name</th>
+                                    <th class="sorting">Amount Available</th>
+                                    <th class="sorting">Amount Applied</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr data-ng-repeat="tr in orderDetails.products track by $index" class="ng-scope odd" role="row">
+                                    <td>Promotion</td>
+                                    <td>1,667,256.56 CNY</td>
+                                    <td>557,893.50 CNY</td>
+                                </tr>
+                                <tr data-ng-repeat="tr in orderDetails.products track by $index" class="ng-scope odd" role="row">
+                                    <td>Warrenty</td>
+                                    <td>956,800 CNY</td>
+                                    <td>832,785.23 CNY</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+
+                    <h3>Invoices</h3>
+                    <div class="table-responsive">
+                        <table class="shipment-table ng-isonlate-scope no-footer dataTable" data-datatable="ng" data-dt-options="productTable.dtOptions">
+                            <thead>
+                                <tr role="row">
+                                    <th class="sorting">Invoice</th>
+                                    <th class="sorting">Status</th>
+                                    <th class="sorting">Balance</th>
+                                    <th class="sorting">Due Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr data-ng-repeat="tr in orderDetails.products track by $index" class="ng-scope odd" role="row">
+                                    <td><a href="#">2016/SALES0000568432</a></td>
+                                    <td>Open</td>
+                                    <td>557,893.50 CNY</td>
+                                    <td>51/30/2016</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+                <div class="col-xs-12 col-lg-4">
+                    <div class="card m-t-4">
+                        <div class="title">Order Comments</div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique enim modi earum,
+                            perferendis. Labore molestiae autem minus, cumque eligendi adipisci.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="title">Attachments</div>
+                        <div class="attachment">
+                            <span class="name">filename.txt</span>
+                            <a href="#" class="close-button">
+                                <i class="icon close"></i>
+                            </a>
+                        </div>
+                        <div class="m-t-1">
+                            <a href="#">Add New Attachment...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer id="main-footer">
+                <div class="container-fluid">
+                    <div class="row p-y-1">
+                        <div class="col-xs-12">
+                            &copy; 2016 Johnson Controls. All Rights Reserved
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+        <div id="modal" class="dimmer scrolling visible">
+            <div class="modal active"> <!-- TODO: Be sure to remove any style properties -->
+                <a href="#" class="close"><i class="icon close"></i></a>
+                <div class="header">
+                    <div class="row no-gutter">
+                        <div class="col-xs-12 col-lg-8 p-x-0 m-b-1">
+                            Lorem Ipsum Product Name
+                        </div>
+                        <div class="col-xs-12 col-lg-4 p-x-0 text-right-lg text-left-xs">
+                            <div class="button button-green">Product Page</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="product-details row no-gutter">
+
+                        <div class="col-xs-12 col-lg-4">
+                            <img src="../images/product-details-img.jpg" class="product-image image bordered center-block" alt="">
+                            <div class="product-description text-center-xs text-left-lg">
+                                <h5 class="m-t-2">Product Description</h5>
+                                <p class="small">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet iure eaque voluptatem eum voluptas consequuntur asperiores quo nam praesentium.
+                                    Ut illum exercitationem accusamus minima voluptates, non numquam velit tempora id.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-8">
+
+                            <div class="row">
+                                <div class="info-table info-table-small col-xs-12 col-xl-6 m-b-2">
+                                    <h5 class="table-header">Product Details</h5>
+                                    <div class="table-row">
+                                        <div class="table-col">Application</div>
+                                        <div class="table-col strong">Commercial Truck</div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="table-col">Sub-Application</div>
+                                        <div class="table-col strong">Lorem</div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="table-col">Technology</div>
+                                        <div class="table-col strong">Ipsum</div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="table-col">Sub-Technology</div>
+                                        <div class="table-col strong">Flooded</div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="table-col">Design Type</div>
+                                        <div class="table-col strong">Flat Plate</div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="table-col">Grade</div>
+                                        <div class="table-col strong"></div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="table-col">Group Size</div>
+                                        <div class="table-col strong"></div>
+                                    </div>
+                                </div>
+
+                                <div class="info-table info-table-small col-xs-12 col-xl-6 m-b-2">
+                                    <h5 class="table-header">Technical Information</h5>
+                                    <div class="table-row">
+                                        <div class="table-col">Capacity Ah</div>
+                                        <div class="table-col strong">90</div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="table-col">Capacity CCA</div>
+                                        <div class="table-col strong">700</div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="table-col">Capacity CA</div>
+                                        <div class="table-col strong"></div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="table-col">Capacity RC</div>
+                                        <div class="table-col strong"></div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="table-col">Voltage</div>
+                                        <div class="table-col strong">12</div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="table-col">Polarity Layout</div>
+                                        <div class="table-col strong">LHC</div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="table-col">Base Hold Down</div>
+                                        <div class="table-col strong">8</div>
+                                    </div>
+                                </div>
+
+                                <div class="info-table info-table-small col-xs-12 col-xl-6 m-b-2">
+                                    <h5 class="table-header">Size Information</h5>
+                                    <div class="table-row">
+                                        <div class="table-col">Length</div>
+                                        <div class="table-col strong">225 mm</div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="table-col">Height</div>
+                                        <div class="table-col strong">306 mm</div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="table-col">Width</div>
+                                        <div class="table-col strong">173 mm</div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="table-col">Weight</div>
+                                        <div class="table-col strong">25.0 mm</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
